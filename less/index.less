@@ -53,9 +53,125 @@ table {
     box-sizing: border-box;
 }
 
-html, body {
-    height: 100%;
+@main-font: 'Lato', sans-serif;
+@box-bg: #696969;
+
+.center(){
+	display: flex;
+	justify-content: center
 }
 
+.topbot(){
+	padding-top: 1%;
+	padding-bottom: 1%;
+}
 
+body {
+	height: 100%;
+	max-width: 1200px;
+	padding-left: 10%;
+	font-size: 14px;
+	font-family: @main-font;
 
+	h1{
+		font-size: 2.0em;
+		font-weight: 800; 
+		padding-top: 2%;
+		padding-bottom: 2%;
+	}
+	
+	h2{
+		font-size: 1.6em;
+		font-weight: 500;
+	}
+
+	h3{
+		font-size: 1.2em;
+		font-weight: 200;
+	}
+}
+
+.banner{
+	width: 100%;
+	height: auto;
+	max-width: 1200px;
+
+	@media (max-width: 500px) {
+		display: none;
+	}
+}
+
+header{
+
+	.logo{
+		display: flex;
+		justify-content: flex-start;
+		padding: 1% 0% 0% 1%;
+	}
+
+	background-color: @box-bg;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+
+	nav{
+		padding-right: 12%;
+		display: flex;
+		justify-content: flex-end;
+
+		a{
+			margin-left: 20%;
+			text-decoration: none;
+			font-size: 1.4em;
+			color: white;
+
+			@media (max-width: 500px ){
+				display: flex;
+				flex-flow: column;
+				border: 1px solid gray;
+		}
+
+		a:hover{
+			color: black;
+		}
+
+	}
+
+	}	
+
+}
+
+.main-content{
+
+	h2{
+		font-style: italic;
+		.topbot();
+	}
+
+	div{
+		display: flex;
+		justify-content: center;
+	}
+
+	.call-now{
+		width: 20%;
+		padding: 1%;
+		font-family: @main-font;
+		font-size: 2.2em;
+		text-decoration: none;
+		background-color: turquoise;
+		border: 1px solid black;
+		border-radius: 5px;
+		margin: auto;
+		color:black;
+	}
+
+	a.call-now:hover{
+		background-color: gray;
+	}
+
+	p{
+		.topbot();
+	}
+
+}
