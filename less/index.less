@@ -229,5 +229,58 @@ header{
 }
 
 .work-history{
-	
+
+	width: 100%;
+
+	h2{
+		.topbot();
+	}
+	th{
+		border: solid 1px black;
+		padding: 1%;
+	}
+
+	td{
+		border: solid 1px black;
+		padding: 1%;
+	}
+}
+
+.footerbot{
+	background-color: @box-bg;
+	position: absolute;
+	bottom: 0;
+	width: 90%;
+	max-width: 1000px;
+	height: 10%;
+
+		footer{
+		display: flex;
+		flex-flow: column;
+		align-items: center;
+
+		}
+
+		nav{
+			font-size: 2.0em;
+			margin-left: 1%;
+			margin-right: 1%;
+		}
+
+		a{
+			text-decoration: none;
+			color: white;
+		}
+
+		a:hover{
+			text-decoration: none;
+			color: black;
+		}
+
+		.copyright{
+			position: absolute;
+			bottom: 0;
+			font-family: @main-font;
+			padding-bottom: 1%;
+		}
 }
